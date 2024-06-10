@@ -22,7 +22,7 @@ function buildLearningTrain(fileName, videoBox){
     const label = document.createElement("span");
     label.innerText = `train for ${fileName}`;
     train.classList.add("train");
-    train.innerText = "0 seconds";
+    train.innerHTML = "<p>0 seconds</p>";
     videoBox.append(label)
     videoBox.appendChild(train);
 
